@@ -1,0 +1,65 @@
+﻿
+
+
+body {
+    background: url("/MainBackground.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+h3 {
+    color: white;
+}
+
+
+.logs-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.logs-table {
+    width: 80%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+    .logs-table td, .logs-table th {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 12px;
+        text-align: left;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3);
+        color: #fff;
+    }
+
+        .logs-table td::before, .logs-table th::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+            pointer-events: none;
+        }
+
+    .logs-table th {
+        background: rgba(255, 255, 255, 0.3);
+        font-weight: bold;
+    }
+
+
+
+    .logs-table td.text-red {
+        color: red !important;
+    }
+
+    .logs-table td.text-green {
+        color: lawngreen !important;
+    }

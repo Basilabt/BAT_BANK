@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Transfer";
+}
+
+@model clsTransferViewModel;
+
+<head>
+    <link rel="stylesheet" href="~/css/Transfer.css" />
+</head>
+
+
+<body>
+
+    <div class="transfer-container">
+
+        <div class="transfer-card">
+
+            <h3 class="transfer-header">Transfer</h3>
+
+            <form method="post" action="/MoneyAction/PerformTransferAction" onsubmit="return confirm('Are you sure you want to continue ?');">
+
+
+                <div class="form-group mb-3">
+                    <label for="receiverAccountNumber">Receiver Account Number</label>
+                    <input asp-for="receiverAccountNumber" type="text" id="receiverAccountNumber" name="receiverAccountNumber" class="form-control" placeholder="Enter Receiver Account Number" />
+                    <span asp-validation-for="receiverAccountNumber" class="text-danger"></span>
+                </div>
+
+
+                <div class="form-group mb-3">
+                    <label for="amount">Amount</label>
+                    <input asp-for="amount" type="text" id="amount" name="amount" class="form-control" placeholder="Enter amount" />
+                    <span asp-validation-for="amount" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="transfer-btn">Deposit</button>
+
+            </form>
+
+        </div>
+    </div>
+
+    @if (TempData["Message"] != null)
+    {
+        <script>
+            alert("@TempData["Message"]");
+        </script>
+    }
+</body>
+
+
+
+
+
+
+
+
+

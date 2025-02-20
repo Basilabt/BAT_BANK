@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Withdraw";
+}
+
+@model clsWithdrawViewModel;
+
+<head>
+    <link rel="stylesheet" href="~/css/Withdraw.css" />
+</head>
+
+
+<body>
+
+    <div class="withdraw-container">
+
+        <div class="withdraw-card">
+
+            <h3 class="withdraw-header">Withdraw</h3>
+
+            <form method="post" action="/MoneyAction/PerformWithdrawAction" onsubmit="return confirm('Are you sure you want to continue ?');">
+
+                <div class="form-group mb-3">
+                    <label for="amount">Amount</label>
+                    <input asp-for="amount" type="text" id="amount" name="amount" class="form-control" placeholder="Enter amount" />
+                    <span asp-validation-for="amount" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="withdraw-btn">Withdraw</button>
+
+            </form>
+
+        </div>
+    </div>
+
+    @if (TempData["Message"] != null)
+    {
+        <script>
+            alert("@TempData["Message"]");
+        </script>
+    }
+</body>
+
+
+
+
+
+
+
+
+

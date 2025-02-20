@@ -1,0 +1,67 @@
+﻿@{
+
+    ViewData["Title"] = "Dashboard";
+
+
+}
+
+@functions {
+
+    string formatCardNumber(string cardNumber) {
+
+        int length = cardNumber.Length;
+        string last4Digits = cardNumber.Substring(length-4,4);
+
+        return "**** **** **** " + last4Digits;
+    }
+
+};
+
+
+@model clsCreditCardViewModel;
+
+<link rel="stylesheet" href="~/css/CreditCard.css" />
+
+<div class="container">
+    <div class="credit-card">
+        <div class="card-front">            
+            <div class="card-number">@formatCardNumber(@Model.cardNumber)</div>
+            <div class="card-holder-name">@Model.fullname</div>
+            <div class="card-expiry">12/25</div>
+        </div>
+
+        <div class="glossy-card">
+
+            <div class="card-info">
+                <strong>Issue Date:</strong>@Model.creationDate.Date.ToString("yyyy-MM-dd")
+                <strong>Expire Date:</strong> @Model.endDate.ToString("yyyy-MM-dd")
+            </div>
+
+
+            <form method="post" action="/CreditCard/RenewCreditCard" class="credit-card-form">
+              
+                <input type="hidden" name="cardID" value="@Model.cardID" />
+                <input type="hidden" name="cardNumber" value="@Model.cardNumber" />
+                <input type="hidden" name="pin" value="@Model.pin" />
+                <input type="hidden" name="creationDate" value="@Model.creationDate.ToString("yyyy-MM-dd")" />
+                <input type="hidden" name="endDate" value="@Model.endDate.ToString("yyyy-MM-dd")" />
+                <input type="hidden" name="fullname" value="@Model.fullname" />
+    
+                <button type="submit" class="renew-button">Renew Card</button>
+                <input asp-for="endDate" type="date" class="form-control" type="hidden"/>
+                <p>
+                    <span asp-validation-for="endDate" class="text-danger"></span>
+                </p>
+       
+
+            </form>
+
+            
+
+        </div>
+    </div>
+</div>
+
+
+
+

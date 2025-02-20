@@ -1,0 +1,74 @@
+﻿
+body {
+    background: url("/MainBackground.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.card-container a {
+    text-decoration: none;
+}
+
+
+.card {
+    background: rgba(255, 255, 255, 0.2); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    height: 200px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+    
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    }
+
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+
+.card-title {
+    font-family: 'Sans Serif Collection';
+    font-size: medium;
+    color: white;
+    margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    text-decoration: none;
+}
+
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}

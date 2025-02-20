@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "eVouchers";
+}
+
+@functions {
+
+    string calculateImagePath(string name) {
+        string path = "/Icons/" + name + ".png";
+        return path;
+    }
+
+}
+
+@model clsProductsViewModel;
+
+
+
+
+<link rel="stylesheet" href="~/css/Products.css" />
+
+<div class="products-container">
+
+    @foreach (var product in Model.products)
+    {
+
+            <div class="product-card">
+               
+
+                <div class="product-image">
+                    <img src= "@calculateImagePath(product.productName)" alt="Product Image">
+                </div>
+
+               
+                <div class="vertical-separator"></div>
+
+               
+                <div class="product-details">
+                    <p><strong>ID:</strong> @product.productID</p>
+                <p><strong>Name:</strong> @product.productName</p>
+                <p><strong>Description:</strong> @product.description</p>
+                <p><strong>Price:</strong> @product.price JOD</p>
+                </div>
+
+                <div>
+
+                <form method="post" asp-action="PurchaseEvoucher" onsubmit="return confirm('Are you sure you want to continue ?');">
+                    <input type="hidden" name="productId" value="@product.productID" />
+                    <button type="submit" class="purchase-button">Purchase</button>
+                </form>
+
+
+                </div>
+                    
+
+            </div>
+
+
+
+
+
+    }
+
+    @if (TempData["Message"] != null)
+    {
+        <script>
+            alert("@TempData["Message"]");
+        </script>
+    }
+
+
+</div>

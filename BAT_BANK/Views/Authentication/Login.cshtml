@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+@model clsLoginViewModel;
+
+<head>
+    <link rel="stylesheet" href="~/css/Login.css" />
+</head>
+
+
+<body>
+
+    <div class="login-container">
+    
+        <div class="login-card">
+
+            <h3 class="login-header">Login</h3>
+
+            <form method="post" action="/Authentication/Login">
+
+                <div class="form-group mb-3">
+                    <label for="username">Username</label>
+                    <input asp-for="username" type="text" id="username" name="username" class="form-control" placeholder="Enter username" />
+                    <span asp-validation-for="username" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-4">
+                    <label for="password">Password</label>
+                    <input asp-for="password" type="password" id="password" name="password" class="form-control" placeholder="Enter password" />
+                    <span asp-validation-for="password" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="submit-btn">Login</button>
+
+            </form>
+
+            <p class="text-center mt-3">
+                Don't have an account? <a class="register-text" href="/Authentication/Register">Register</a>
+            </p>
+        </div>
+    </div>
+
+    @if (TempData["Message"] != null)
+    {
+        <script>
+            alert("@TempData["Message"]");
+        </script>
+    }
+</body>
+
+
+
+
+
+
+
+
+

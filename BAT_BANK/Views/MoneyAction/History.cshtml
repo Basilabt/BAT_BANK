@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "History";
+}
+
+
+
+@model clsMoneyActionsHistoryViewModel;
+
+
+
+<link rel="stylesheet" href="~/css/History.css" />
+
+<div class="logs-container">
+
+    <table class="logs-table">
+        <thead>
+            <tr>
+                <th>Action</th>
+                <th>Reciever Account Number</th>
+                <th>Amount</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.history)
+            {
+                
+
+                <tr>
+                    <td>@item.actionType</td> 
+
+                    @if(item.actionType == "Transfer") {
+                        <td>@item.receivedAccountNumber</td>
+                    } else {
+                        <td>-</td>
+                    }
+
+                    
+                    <td>@item.amount</td>
+
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+
+</div>

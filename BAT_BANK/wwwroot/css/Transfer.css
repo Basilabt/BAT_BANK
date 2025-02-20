@@ -1,0 +1,51 @@
+﻿body {
+    background: url("/MainBackground.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+h3, label {
+    color: white;
+}
+
+
+.transfer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.transfer-card {
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.transfer-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.transfer-btn {
+    background-color: white;
+    color: darkblue;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.register-text {
+    color: snow;
+}

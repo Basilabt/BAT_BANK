@@ -1,0 +1,190 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+
+<link rel="stylesheet" href="~/css/Dashboard.css" />
+
+
+
+
+<div class="card-container">
+
+
+    <a href="@Url.Action("ClientInfo","ClientInfo")">
+        <div class="card">
+
+            <p>
+
+                <img class="card-icon" src="/Icons/Account.png" />
+            <p class="card-title">Info</p>
+
+            
+
+        </div>
+
+    </a>
+
+
+    <a href="@Url.Action("CreditCard","CreditCard")">
+
+        <div class="card">
+
+            <p>
+                <img class="card-icon" src="/Icons/CreditCard.png" />
+            <p class="card-title">Credit Card</p>
+
+            
+
+        </div>
+
+    </a>
+
+
+    <a href="@Url.Action("Deposit","MoneyAction")">
+
+        <div class="card">
+
+            <p>
+
+                <img class="card-icon" src="/Icons/Deposit.png" />
+            <p class="card-title">Deposit</p>
+
+            
+
+        </div>
+
+    </a>
+
+
+    <a href="@Url.Action("Withdraw","MoneyAction")">
+
+        <div class="card">
+
+            <p>
+
+                <img class="card-icon" src="/Icons/Withdrawl.png" />
+            <p class="card-title">Withdraw</p>
+
+            
+
+        </div>
+
+
+    </a>
+
+
+    <a href="@Url.Action("Transfer","MoneyAction")">
+
+        <div class="card">
+
+            <p>
+
+                <img class="card-icon" src="/Icons/Transfer.png" />
+            <p class="card-title">Transfer</p>
+
+            
+
+
+        </div>
+
+    </a>
+
+
+    <a href="@Url.Action("EVouchers","Products")">
+
+        <div class="card">
+
+            <p>
+                <img class="card-icon" src="/Icons/Evoucher.png" />
+            <p class="card-title">E-Vouchers</p>
+
+           
+
+        </div>
+
+    </a>
+
+
+    <a href="@Url.Action("MonthlySummary","Documents")">
+
+        <div class="card">
+
+            <p>
+
+                <img class="card-icon" src="/Icons/MSWord.png" />
+            <p class="card-title">Monthly summary</p>
+
+
+
+        </div>
+
+    </a>
+
+
+    <a href="@Url.Action("MoneyActionHistory","MoneyAction")">
+
+        <div class="card">
+
+            <p>
+
+                <img class="card-icon" src="/Icons/Actions.png" />
+            <p class="card-title">Actions</p>
+
+
+
+        </div>
+
+    </a>
+
+
+
+    <a href="@Url.Action("Logs","Log")">
+
+        <div class="card">
+
+            <p>
+
+                <img class="card-icon" src="/Icons/Log.png" />
+            <p class="card-title">Logs</p>
+
+
+
+        </div>
+
+    </a>
+
+    <a href="@Url.Action("Logout","Authentication")">
+
+        <div class="card">
+
+            <p>
+
+                <img class="card-icon" src="/Icons/PowerButton.png" />
+            <p class="card-title">Logout</p>
+
+
+
+        </div>
+
+    </a>
+
+
+
+
+
+
+
+    @if (TempData["Message"] != null)
+    {
+        <script>
+            alert("@TempData["Message"]");
+        </script>
+    }
+
+</div>
+
+
+
+
+

@@ -1,0 +1,91 @@
+﻿@{
+    ViewData["Title"] = "Client Information";
+}
+
+
+
+@model clsClientInfoViewModel;
+
+
+<head>
+    <link rel="stylesheet" href="~/css/ClientInfo.css" />
+</head>
+
+
+<body>
+
+    <div class="ClientInfo-container">
+
+        <div class="ClientInfo-card">
+
+            <h3 class="ClientInfo-header">Client Information</h3>
+
+            <form method="post" action="/ClientInfo/UpdateClientInfo">
+
+
+                <div class="form-group mb-3">
+                    <label for="ssn">SSN</label>
+                    <input asp-for="ssn" type="text" id="ssn" name="ssn" class="form-control" placeholder="" readonly/>
+                    <span asp-validation-for="ssn" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="firstName">Firstname</label>
+                    <input asp-for="firstName" type="text" id="firstName" name="firstName" class="form-control" placeholder="" readonly />
+                    <span asp-validation-for="firstName" class="text-danger"></span>
+                </div>
+
+
+
+                <div class="form-group mb-4">
+                    <label for="secondName">Secondname</label>
+                    <input asp-for="secondName" type="text" id="secondName" name="secondName" class="form-control" placeholder="" readonly />
+                    <span asp-validation-for="secondName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="thirdName">Thirdname</label>
+                    <input asp-for="thirdName" type="text" id="thirdName" name="thirdName" class="form-control" placeholder="" readonly />
+                    <span asp-validation-for="thirdName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="lastName">Lastname</label>
+                    <input asp-for="lastName" type="text" id="lastName" name="lastName" class="form-control" placeholder="" readonly />
+                    <span asp-validation-for="lastName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="email">Email</label>
+                    <input asp-for="email" type="email" id="email" name="email" class="form-control" placeholder="" />
+                    <span asp-validation-for="email" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input asp-for="phoneNumber" type="text" id="phoneNumber" name="phoneNumber" class="form-control" placeholder="" />
+                    <span asp-validation-for="phoneNumber" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="gender">Gender</label>
+                    <select asp-for="gender" id="gender" name="gender" class="form-control">
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <span asp-validation-for="gender" class="text-danger"></span>
+                </div>
+
+
+                <button type="submit" class="update-btn">Update</button>
+
+            </form>
+
+        
+        </div>
+    </div>
+
+
+</body>

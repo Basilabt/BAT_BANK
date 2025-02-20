@@ -1,0 +1,17 @@
+﻿
+
+
+
+
+body {
+    background: url("/MainBackground.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-weight: bolder;
+}
+
+h1, p {
+    color: white;
+}
