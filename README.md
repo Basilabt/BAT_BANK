@@ -1,3 +1,4 @@
+![Image](https://github.com/user-attachments/assets/1d459bd9-47dc-4b11-ac36-61847498b52c)
 # 🏦 BAT Bank
 
 [![👨‍💻 Developer](https://img.shields.io/badge/Developer-Basilabt-crimson)](https://github.com/Basilabt)
