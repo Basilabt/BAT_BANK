@@ -100,6 +100,14 @@ This repository contains the code for the BAT Bank iOS application, designed to 
 ![Image](https://github.com/user-attachments/assets/1d7ea982-f445-421f-9d58-edda67585cf0)
 
 ### 💵 8. Money Actions Page 
+
+
+
+
+## 📞 Contact
+If you have any questions, suggestions, or feedback
+
+- **Email:** [baabutaleb@gmail.com](mailto:baabutaleb@gmail.com)
 ![Image](https://github.com/user-attachments/assets/3b2c6555-45a9-4929-9b19-c9b86905df8c)
 
 ### 📜 9. Logs
