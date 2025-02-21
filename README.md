@@ -54,24 +54,38 @@ This project includes:
 This repository contains the code for the BAT Bank iOS application, designed to provide users with a seamless banking experience on their iPhones and iPads. The app features a user-friendly interface and various functionalities tailored for modern banking needs. To explore the code and contribute to the project, visit our GitHub repository: [BAT Bank iOS](https://github.com/Basilabt/BAT_Bank_iOS).
 
 ### 🔐 1. Login Page 
+
+
 ![Image](https://github.com/user-attachments/assets/764c9ecd-3003-47ae-8e20-93d051a8df02)
 
 ### 📊 2. Dashboard Page 
+
+
 ![Image](https://github.com/user-attachments/assets/873d9866-25a2-4ec0-b02a-ece726b232eb)
 
 ### 🎫 3. E-Vouchers Page 
+
+
 ![Image](https://github.com/user-attachments/assets/3571e8e1-b326-43a5-9821-156470f0e1e7)
 
 ### 📅 4. Monthly Summary Page 
+
+
 ![Image](https://github.com/user-attachments/assets/b7e1a479-b654-48af-8fea-9bba9eb0d7f8)
 
 ### 👥 5. Client Information Page  
+
+
 ![Image](https://github.com/user-attachments/assets/9705fcc7-6eb2-4210-b823-19053cf6a72d)
 
 ### 💸 6. Transfer Page 
+
+
 ![Image](https://github.com/user-attachments/assets/2aac1648-7a11-452f-99d6-095229db8ea1)
 
 ### 📜 7. Logs
+
+
 ![Image](https://github.com/user-attachments/assets/650852a7-2692-45b6-9c6e-92db1ccd7ffd)
 
 ---
