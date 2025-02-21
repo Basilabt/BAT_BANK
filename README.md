@@ -49,7 +49,7 @@ This project includes:
 ---
 
 ## 📱 Mobile (iOS/iPadOS) App
-
+This repository contains the code for the BAT Bank iOS application, designed to provide users with a seamless banking experience on their iPhones and iPads. The app features a user-friendly interface and various functionalities tailored for modern banking needs. To explore the code and contribute to the project, visit our GitHub repository: BAT Bank iOS.
 ---
 
 ## 🌍 Web App
