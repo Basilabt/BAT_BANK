@@ -41,12 +41,12 @@ This project includes:
 ---
 
 ## 🗄️ Database Relational Schema
-![Image](https://github.com/user-attachments/assets/ab779e0f-6183-4c7c-965d-7f46427718f6)
+![Image](https://github.com/user-attachments/assets/684e27b6-b0e9-4a23-9e13-c766732fa70d)
 
 ---
 
 ## 🔌 API 
-![Image](https://github.com/user-attachments/assets/493bddbc-a4cf-4308-b3a1-9a333ecc060e)
+![Image](https://github.com/user-attachments/assets/08371451-b07a-445b-8962-7c3074568bf4)
 
 ---
 
