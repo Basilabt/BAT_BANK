@@ -81,32 +81,32 @@ This repository contains the code for the BAT Bank iOS application, designed to 
 ## 🌍 Web App
 
 ### 🏠 1. Home Page
-![Image](https://github.com/user-attachments/assets/fbf26491-9a57-4461-9bf2-14f23b4fd329)
+![Image](https://github.com/user-attachments/assets/f1e8c47f-e24c-4d83-bb75-7ba48a69722c)
 
 ### 🔐 2. Login Page 
-![Image](https://github.com/user-attachments/assets/fd12826b-1f25-4fa8-b32b-63f60c0934e1)
+![Image](https://github.com/user-attachments/assets/73b28ea9-6fd0-43c1-8211-839ffe146ac7)
 
 ### 📊 3. Dashboard Page 
-![Image](https://github.com/user-attachments/assets/05a1d09f-7930-4a3e-9813-ea027b1b6c5c)
+![Image](https://github.com/user-attachments/assets/cdc285cf-826a-4de7-b764-4585c778340a)
 
 ### 🎫 4. E-Vouchers Page 
-![Image](https://github.com/user-attachments/assets/40076051-ce9f-4a3b-bea6-14d1ac9c4c03)
+![Image](https://github.com/user-attachments/assets/95148c88-b93c-449f-8658-7c5e267326b1)
 
 ### 📅 5. Monthly Summary Page 
-![Image](https://github.com/user-attachments/assets/ac85337c-7446-47ff-8ed4-243a75279b8a)
+![Image](https://github.com/user-attachments/assets/ca2cad01-373a-4f85-8935-d14a865c7e1e)
 
 ### 👥 6. Client Information Page  
-![Image](https://github.com/user-attachments/assets/1987eb9f-dee9-4c0e-948c-356531883b07)
+![Image](https://github.com/user-attachments/assets/8110a9a5-f5ef-46b1-a411-eeb15e33e703)
 
 ### 💸 7. Transfer Page 
-![Image](https://github.com/user-attachments/assets/1d7ea982-f445-421f-9d58-edda67585cf0)
+![Image](https://github.com/user-attachments/assets/078e3859-736a-4cf4-86a4-5326347773fe)
 
 ### 💵 8. Money Actions Page 
 
-![Image](https://github.com/user-attachments/assets/3b2c6555-45a9-4929-9b19-c9b86905df8c)
+![Image](https://github.com/user-attachments/assets/3aaa8f73-7e68-46c2-ac90-62909cc84814)
 
 ### 📜 9. Logs
-![Image](https://github.com/user-attachments/assets/c3216cf2-56dd-4743-8e52-b144b87e012a)
+![Image](https://github.com/user-attachments/assets/9f5d56a0-f560-49e3-93cf-96f96bbe8b55)
 
 
 
